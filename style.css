@@ -14,7 +14,7 @@ body {
 }
 
 .btn-container {
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,8 +43,6 @@ body {
 }
 
 .img-container {
-  height: 75%;
-  width: 100%;
   width: 800px;
   margin: 0 auto;
 }
@@ -61,7 +59,8 @@ body {
 
 /* On screens that are 600px or less, set the background color to olive */
 @media screen and (max-width: 600px) {
-  .img-container {
-    width: 50%;
+  #pic {
+    width: 300px;
+    height: 70vh;
   }
 }
