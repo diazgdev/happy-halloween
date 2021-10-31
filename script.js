@@ -1,14 +1,16 @@
 const botoncito = document.getElementById('btn');
-const sound = new Audio('sound.mp3');
+const scaryImage = document.getElementById('pic');
+const scream = new Audio('scream.mp3');
+const laugh = new Audio('laugh.mp3');
 
 
 botoncito.addEventListener('click', (event) => {
   const clickedButton = event.currentTarget;
   clickedButton.setAttribute('disabled', '');
-  clickedButton.innerText = 'I told you!';
-  sound.addEventListener("ended", () => {
-    clickedButton.removeAttribute('disabled');
-    clickedButton.innerText = "Click me!";
-  });
-  sound.play();
+  clickedButton.innerText = '👻 I told you! 👻';
+  scaryImage.style.display = "block";
+  scream.volume = 1
+  laugh.volume = 1
+  scream.play();
+  laugh.play();
 });
